@@ -8,7 +8,10 @@
 	<title>{{config('app.name', 'Blog')}}</title>
 </head>
     <body>
-        @yield('content')
+        @include('inc.navbar')
+        <div class="container">
+            @yield('content')
+        </div>
     </body>
 
 </html>
